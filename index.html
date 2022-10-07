@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Del Ahorcado - Alura</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+
+<body>
+    <header>
+        <img class="imglogo" src="imagenes/logo.png" alt="Logo de la aplicación">
+    </header>
+    <main>
+        <div class="contenedor">
+            <button class="jugar" type="button" id="jugar" onclick="mostrarJuego()">Iniciar Juego</button>
+            <button class="agregar_palabra" type="button" id="agregar_palabra" onclick="mostrarAgregar()">Agregar nueva palabra</button>
+        </div>
+        <div class="contenedor_agregar">
+            <textarea class="mensaje" id="textarea" placeholder="Ingrese una palabra" autofocus></textarea>
+            <img src="imagenes/alerta.png" alt="Advertencia" class="informacion">
+            <p> Max 8 letras</p>
+            <div class="botones_agregar">
+                <button class="guardar" type="button" id="guardar" onclick="agregar()">Guardar y empezar</button>
+                <button class="cancelar" type="button" id="cancelar" onclick="mostrarPrincipal()">Cancelar</button>
+            </div>
+        </div>
+        <div class="contenedor_juego">
+            <h1>pantalla juego</h1>
+            <button class="desistir" type="button" id="desistir" onclick="desistir()">Desistir</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

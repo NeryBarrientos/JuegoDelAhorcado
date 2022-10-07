@@ -1,0 +1,120 @@
+* {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+body {
+    background-color: #F3F5FC;
+}
+
+header {
+    background: transparent;
+    margin: 1% 0;
+    padding: 10px;
+}
+
+header img {
+    height: 48px;
+    width: 31px;
+    margin: 20px 0 0 20px;
+}
+
+main {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 200px;
+    gap: 15px;
+}
+
+.jugar {
+    background: #0A3871;
+    color: white;
+    border-radius: 24px;
+    width: 300px;
+    height: 110px;
+    font-size: 20px;
+}
+
+.agregar_palabra {
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    background: transparent;
+    border-radius: 24px;
+    width: 280px;
+    height: 67px;
+    font-size: 20px;
+}
+
+.jugar:hover,
+.agregar_palabra:hover {
+    box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
+}
+
+/* pagina agregar palabras */
+.contenedor_agregar {
+    display: flex;
+    min-height: 90vh;
+    width: 60%;
+}
+
+.contenedor_agregar textarea {
+    background: transparent;
+    width: 100%;
+    resize: none;
+    color: #0A3871;
+    border: none;
+    outline: none;
+    height: 350px;
+}
+
+.contenedor_agregar img,
+.contenedor_agregar p {
+    display: inline-block;
+    font-size: 12px;
+    color: #495057;
+}
+
+.botones_agregar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.guardar {
+    height: 67px;
+    width: 332px;
+    background: #0A3871;
+    color: white;
+    border-radius: 24px;
+    font-size: 20px;
+}
+
+.cancelar {
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    background: transparent;
+    border-radius: 24px;
+    height: 67px;
+    width: 332px;
+    font-size: 20px;
+}
+
+.guardar:hover,
+.cancelar:hover {
+    box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
+}
