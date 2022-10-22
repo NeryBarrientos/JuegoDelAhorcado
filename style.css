@@ -164,14 +164,27 @@ main {
 }
 
 .centro {
+    display: flex;
+    flex-direction: column;
     width: 800px;
-    height: 545px;
-    /* background: blue; */
+    height: 530px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
 
-/* .centro canvas{
-    background: red;
-} */
+.ahorcado {
+    height: 300px;
+}
+
+.palabra {
+    margin-bottom: 40px;
+    font-size: 60px;
+    letter-spacing: 40px;
+    color: #0A3871;
+}
+
 
 .caja3 {
     width: 20%;
