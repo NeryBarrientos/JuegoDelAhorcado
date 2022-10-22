@@ -103,7 +103,7 @@ function jugar(event) {
                         toast: true,
                         position: 'bottom-end',
                         color: '#F3F5FC',
-                        background: 'url(/imagenes/texturas.jpg)'
+                        background: 'url(imagenes/texturas.jpg)'
                     })
                     letras_acertadas += teclapresionada
                     palabraarray[i] = teclapresionada
@@ -120,7 +120,7 @@ function jugar(event) {
                 toast: true,
                 position: 'top',
                 color: '#F3F5FC',
-                background: 'url(/imagenes/texturas.jpg)'
+                background: 'url(imagenes/texturas.jpg)'
             })
         } else {
             Swal.fire({
@@ -132,7 +132,7 @@ function jugar(event) {
                 toast: true,
                 position: 'bottom-end',
                 color: '#F3F5FC',
-                background: 'url(/imagenes/texturas.jpg)'
+                background: 'url(imagenes/texturas.jpg)'
             })
             intentos = parseInt(intentos) - 1
             document.getElementById('textarea_intentos').value = intentos;
