@@ -26,7 +26,7 @@ function mostrarPrincipal() {
     letras_acertadas = ''
     document.getElementById('textarea_intentos').value = intentos;
     document.getElementById('textarea_letras').value = letras_incorrectas;
-    document.getElementById("ahorcado").src="/imagenes/ahorcado_" + intentos +".png";
+    document.getElementById("ahorcado").src="imagenes/ahorcado_" + intentos +".png";
     pantalla_principal.style.display = "flex";
     pantalla_agregar.style.display = "none";
     pantalla_juego.style.display = "none";
@@ -54,7 +54,7 @@ function mostrarAgregar() {
     letras_acertadas = ''
     document.getElementById('textarea_intentos').value = intentos;
     document.getElementById('textarea_letras').value = letras_incorrectas;
-    document.getElementById("ahorcado").src="/imagenes/ahorcado_" + intentos +".png";
+    document.getElementById("ahorcado").src="imagenes/ahorcado_" + intentos +".png";
     document.removeEventListener("keydown",jugar)
 }
 //Comprueba si se acertó la palabra
@@ -138,7 +138,7 @@ function jugar(event) {
             document.getElementById('textarea_intentos').value = intentos;
             letras_incorrectas = letras_incorrectas + '  ' + teclapresionada
             document.getElementById('textarea_letras').value = letras_incorrectas;
-            document.getElementById("ahorcado").src = "/imagenes/ahorcado_" + intentos + ".png";
+            document.getElementById("ahorcado").src = "imagenes/ahorcado_" + intentos + ".png";
         }
         jugar()
     } else {
@@ -155,7 +155,7 @@ function jugar(event) {
         pantalla_principal.style.display = "flex";
         pantalla_agregar.style.display = "none";
         pantalla_juego.style.display = "none";
-        document.getElementById("ahorcado").src = "/imagenes/ahorcado_" + intentos + ".png";
+        document.getElementById("ahorcado").src = "imagenes/ahorcado_" + intentos + ".png";
     }
 }
 
@@ -169,7 +169,7 @@ function mostrarJuego() {
     letras_acertadas = ''
     document.getElementById('textarea_intentos').value = intentos;
     document.getElementById('textarea_letras').value = letras_incorrectas;
-    document.getElementById("ahorcado").src = "/imagenes/ahorcado_" + intentos + ".png";
+    document.getElementById("ahorcado").src = "imagenes/ahorcado_" + intentos + ".png";
     palabra_al_azar();
     dibujarlineas();
     jugar()
@@ -228,7 +228,7 @@ function agregar() {
     letras_acertadas = ''
     document.getElementById('textarea_intentos').value = intentos;
     document.getElementById('textarea_letras').value = letras_incorrectas;
-    document.getElementById("ahorcado").src="/imagenes/ahorcado_" + intentos +".png";
+    document.getElementById("ahorcado").src="imagenes/ahorcado_" + intentos +".png";
     document.removeEventListener("keydown",jugar)
     if (texto.length == 0) {
         Swal.fire({
@@ -244,7 +244,7 @@ function agregar() {
         letras_acertadas = ''
         document.getElementById('textarea_intentos').value = intentos;
         document.getElementById('textarea_letras').value = letras_incorrectas;
-        document.getElementById("ahorcado").src="/imagenes/ahorcado_" + intentos +".png";
+        document.getElementById("ahorcado").src="imagenes/ahorcado_" + intentos +".png";
         palabras.push(texto.toLowerCase());
         mostrarJuego()
         Swal.fire({
